@@ -10,7 +10,7 @@ def main():
         if choice == 1:
             password = input("Please enter your password to encode: ")
             password = encode(password)
-            print("Your password has been encoded and stored! " + password + "\n")
+            print("Your password has been encoded and stored!\n")
         elif choice == 2:
             pass
         elif choice == 3:
