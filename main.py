@@ -12,10 +12,11 @@ def main():
             password = encode(password)
             print("Your password has been encoded and stored!\n")
         elif choice == 2:
-            pass
+            print(f'The encoded password is {password}, and the original password is {decode(password)}.')
         elif choice == 3:
             break
         else: print("Error: invalid option\n")
+
 
 def encode(password):
     new_password = ""
@@ -25,8 +26,16 @@ def encode(password):
         new_password += str(j)
     return new_password
 
-def decode():  #todo
-    pass
+
+def decode(nums):
+    deco = ''
+    for i in nums:
+        i = int(i)
+        if i > 2:
+            deco += str(i - 3)
+        else:
+            deco += str(i + 7)
+    return deco
 
 
 if __name__ == '__main__': main()
